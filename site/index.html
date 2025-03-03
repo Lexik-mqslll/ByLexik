@@ -8,7 +8,7 @@
         let audio;
         function playSound() {
             if (!audio) {
-                audio = new Audio("sound.mp3"); // Замени на имя твоего файла
+                audio = new Audio("/sound.mp3"); // Замени на имя твоего файла
                 audio.volume = 1.0; // Устанавливаем громкость на максимум
                 audio.play().catch(error => console.log("Ошибка воспроизведения: " + error));
             }
